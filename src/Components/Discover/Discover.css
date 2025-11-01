@@ -1,0 +1,200 @@
+.discover-wrapper{
+    width: 80%;
+    min-height: 100vh;
+    /* background-color: aqua; */
+}
+.search-wrapper{
+    width: 100%;
+    /* background-color: red; */
+    padding: 1rem;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.discover{
+    font-size: 2rem;
+    color: white;
+}
+.form{
+    width: 50%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    /* background-color: aquamarine; */
+}
+.lupa{
+    width: fit-content;
+    color: white;
+}
+.search{
+    width: 100%;
+    background-color: black;
+    color: white;
+    border-radius: 6px;
+    padding: .5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: start;
+}
+.wrapper-tops{
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: start;
+    align-items: start;
+    padding: 1rem;
+    /* overflow: hidden; */
+    /* background-color: azure; */
+}
+.charts-h2{
+    font-size: 2rem;
+    text-align: center;
+    margin: 0 1rem 0 0;
+    color: white;
+}
+.wrapper-charts{
+    width: max-content;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+.charts{
+    width: calc(100%/3);
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    gap: 1rem;
+}
+.card{
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: start;
+    align-items: center;
+    padding: .5rem;
+    gap: 1rem;
+
+    /* width: 190px; */
+    /* height: 254px; */
+    background: rgb(236, 236, 236);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.img-btn{
+    width: 50%;
+    /* background-color: blue; */
+}
+.img-btn a{
+    margin: 1rem 0 1rem .2rem;
+}
+.card-info{
+    width: 100%;
+    /* background-color: lightblue; */
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;
+}
+.titulo-h2{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.card-duracion{
+    /* background-color: yellow; */
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.duracion , .artista , .cantante{
+    font-size: .8rem;
+}
+.submit{
+    width: fit-content;
+    background-color: var(--colorVerde);
+    color: white;
+    border-radius: 6px;
+    padding: .5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: start
+}
+
+@media(max-width:800px){
+    .discover{
+        font-size: 1.2rem;
+    }
+    .form{
+        width: 50%;
+    }
+    .search , .submit{
+        font-size: .8rem;
+    }
+    .charts-h2{
+        font-size: 1.2rem;
+    }
+    .card{
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    .titulo-h2{
+        width: fit-content;
+        font-size: 1rem;
+    }
+    .card-duracion{
+        gap: 1rem;
+    }
+
+}
+@media(max-width:500px){
+    .discover-wrapper{
+        width: 100%;
+    }
+    .form{
+        width: 70%;
+    }
+    .card{
+        width: 100%;
+    }
+    .grid{
+        grid-template-columns: repeat(2 , 1fr);
+        gap: .5rem;
+    }   
+}
+@media(max-width:320px){
+    .form{
+        width: 100%;
+    }
+    .grid{
+        grid-template-columns: repeat(1 , 1fr);
+        gap: .5rem;
+    }   
+    .charts-h2{
+        font-size: 1rem;
+    }
+    .search , .submit{
+        font-size: .8rem;
+
+    }
+    .discover{
+        display: none;
+    }
+}

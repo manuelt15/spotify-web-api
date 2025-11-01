@@ -1,0 +1,11 @@
+.main{
+  width: 100%;
+  max-width: 2000px;
+  min-height: 100vh;
+  margin: auto;
+  background-color: rgb(40, 40, 40);
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: end;
+  align-items: start;
+}

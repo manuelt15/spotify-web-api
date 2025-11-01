@@ -1,0 +1,13 @@
+.spotify{
+  transition: all .5s ease;
+}
+.spotify:hover{
+  transform: scale(102%);
+  box-shadow: 2px 2px lightgreen;
+}
+
+@media(max-width:800px){
+  .spotify{
+    font-size: 2px;
+  }
+}
