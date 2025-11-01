@@ -2,7 +2,6 @@
 
 Este componente permite buscar artistas de Spotify y mostrarlos con su imagen, géneros y número de seguidores.
 Al hacer click en Play on Spotify se abre la página del artista en Spotify.
-spotify-web-api-eight.vercel.app
 
 ⚙️ Tecnologías usadas
 
