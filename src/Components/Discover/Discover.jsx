@@ -3,9 +3,6 @@ import { Boton } from '../Boton/Boton'
 import Swal from 'sweetalert2'
 import './Discover.css'
 
-
-const { VITE_CLIENT_ID, VITE_CLIENT_SECRET } = import.meta.env
-
 export const Discover = () => {
     const [cancion, setCancion] = useState('')
     const [canciones, setCanciones] = useState([])
