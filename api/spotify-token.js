@@ -1,8 +1,5 @@
 export default async function handler(req, res) {
 
-    console.log('CLIENT_ID:', process.env.CLIENT_ID)
-    console.log('CLIENT_SECRET:', process.env.CLIENT_SECRET)
-
     const response = await fetch('https://accounts.spotify.com/api/token', {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
