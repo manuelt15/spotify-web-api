@@ -79,7 +79,7 @@ export const Discover = () => {
             </div>
 
             <div className="wrapper-tops">
-                <h2 className="charts-h2">Artist</h2>
+                <h2 className="charts-h2">Artists</h2>
                 <div className="wrapper-charts">
                     {canciones.length === 0 ? <div style={{
                         color: `white`,
