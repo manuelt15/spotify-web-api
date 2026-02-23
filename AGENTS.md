@@ -7,6 +7,8 @@ This document provides guidance for AI agents working in this repository.
 - **Project Type**: React 19 SPA with Vite
 - **Language**: JavaScript/JSX (ES Modules)
 - **Package Manager**: npm
+- **Description**: Spotify artist search web application using Spotify Web API
+- **Live URL**: https://spotify-web-api-eight.vercel.app/
 
 ## Build / Lint / Test Commands
 
@@ -125,6 +127,34 @@ The project uses @eslint/js, eslint-plugin-react-hooks, and eslint-plugin-react-
 - Co-locate CSS files with components
 - Use kebab-case for class names
 - Avoid inline styles except for dynamic values
+- Use CSS custom properties for colors (e.g., `var(--colorVerde)`)
+- Include responsive breakpoints for all common device widths
+
+### Responsive Breakpoints
+
+The project uses these media queries:
+```css
+@media(max-width:1728px) {}
+@media(max-width:1559px) {}
+@media(max-width:1440px) {}
+@media(max-width:1280px) {}
+@media(max-width:820px) {}
+@media(max-width:768px) {}
+@media(max-width:608px) {}
+@media(max-width:581px) {}
+@media(max-width:575px) {}
+@media(max-width:480px) {}
+@media(max-width:440px) {}
+@media(max-width:430px) {}
+@media(max-width:428px) {}
+@media(max-width:425px) {}
+@media(max-width:393px) {}
+@media(max-width:390px) {}
+@media(max-width:379px) {}
+@media(max-width:375px) {}
+@media(max-width:360px) {}
+@media(max-width:320px) {}
+```
 
 ### UI Libraries
 
