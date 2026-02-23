@@ -1,13 +1,19 @@
-.spotify{
-  transition: all .5s ease;
+.spotify {
+    background-color: #1db954;
+    color: #000000;
+    border: none;
+    border-radius: 500px;
+    padding: 6px 14px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    white-space: nowrap;
+    width: 100%;
+    text-align: center;
+    transition: all 0.2s ease;
 }
-.spotify:hover{
-  transform: scale(102%);
-  box-shadow: 2px 2px lightgreen;
-}
-
-@media(max-width:800px){
-  .spotify{
-    font-size: 2px;
-  }
+.spotify:hover {
+    background-color: #1ed760;
+    transform: scale(1.04);
 }
