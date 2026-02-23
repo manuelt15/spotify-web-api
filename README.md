@@ -1,67 +1,102 @@
-🎧 Discover Component (React + Spotify API)
+# Spotify Artist Search
+
+A React 19 SPA that allows you to search for Spotify artists and display them with their image, genres, and follower count.
+
+**Live URL**: https://spotify-web-api-eight.vercel.app/
+
 ---
-https://spotify-web-api-eight.vercel.app/
+
+## Technologies
+
+- React 19
+- Vite
+- Fetch API
+- SweetAlert2
+- Spotify Web API (Client Credentials Flow)
+
 ---
 
-Este componente permite buscar artistas de Spotify y mostrarlos con su imagen, géneros y número de seguidores.
-Al hacer click en Play on Spotify se abre la página del artista en Spotify.
+## Getting Started
 
-⚙️ Tecnologías usadas
+### 1. Install dependencies
 
-React
+```bash
+npm install
+```
 
-Vite
+### 2. Environment Variables
 
-Fetch API
+Create a `.env` file in the root directory:
 
-SweetAlert2
+```
+VITE_CLIENT_ID=your_spotify_client_id
+VITE_CLIENT_SECRET=your_spotify_client_secret
+```
 
-Spotify Web API (Client Credentials Flow)
+### 3. Run Development Server
 
-📌 Variables de entorno
+```bash
+npm run dev
+```
 
-Crea un archivo .env en la raíz del proyecto y coloca:
-VITE_CLIENT_ID=tu_client_id_de_spotify
-VITE_CLIENT_SECRET=tu_client_secret_de_spotify
+The app will be available at http://localhost:5173
 
-🚀 ¿Qué hace el componente?
+---
 
-Obtiene un token de acceso de Spotify al montar el componente (useEffect)
+## Available Scripts
 
-Permite buscar artistas por nombre
+| Command | Description |
+|---------|-------------|
+| `npm run dev` | Start Vite dev server |
+| `npm run build` | Build for production |
+| `npm run preview` | Preview production build |
+| `npm run lint` | Run ESLint |
 
-Hace una petición a la API de Spotify para traer artistas
+---
 
-Renderiza una grid con:
+## Features
 
-Imagen del artista
+- Search Spotify artists by name
+- Display artist image, name, primary genre, and follower count
+- Link to artist's Spotify profile
+- Responsive design for all screen sizes
+- Error handling with SweetAlert2 notifications
 
-Nombre
+---
 
-Género principal
+## API Endpoints
 
-Followers
+| Action | Endpoint |
+|--------|----------|
+| Get access token | `POST https://accounts.spotify.com/api/token` |
+| Search artists | `GET https://api.spotify.com/v1/search?type=artist&q=` |
 
-Botón que enlaza a Spotify
+---
 
-📁 Endpoints usados
+## Project Structure
 
-| Acción          | Endpoint                                               |
-| --------------- | ------------------------------------------------------ |
-| obtener token   | `POST https://accounts.spotify.com/api/token`          |
-| buscar artistas | `GET https://api.spotify.com/v1/search?type=artist&q=` |
+```
+src/
+├── Components/
+│   ├── Boton/
+│   │   ├── Boton.jsx
+│   │   └── Boton.css
+│   ├── Discover/
+│   │   ├── Discover.jsx
+│   │   └── Discover.css
+│   ├── Main/
+│   │   └── Main.jsx
+│   └── Menu/
+│       └── Menu.jsx
+├── App.jsx
+├── App.css
+└── main.jsx
+```
 
-🧠 Mejoras posibles
+---
 
-Guardar búsquedas recientes en localStorage
+## Notes
 
-Autocompletado mientras se escribe
-
-Paginación infinita (infinite scroll)
-
-Añadir búsqueda por canciones o álbumes
-
-Notas
-
-Este componente actualmente solo busca artistas.
-Si quieres buscar canciones en lugar de artistas, cambia type=artist por type=track en la URL del fetch.
+- This project uses the Spotify Client Credentials Flow (no user authentication required)
+- To search for tracks instead of artists, change `type=artist` to `type=track` in the API call
+- The project includes comprehensive responsive breakpoints for all common device widths
