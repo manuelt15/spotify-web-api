@@ -94,6 +94,7 @@
     align-items: center;
     gap: 4px;
     flex-shrink: 0;
+    overflow: hidden;
 }
 
 .card-img {
@@ -106,6 +107,7 @@
 .img-btn a {
     display: flex;
     width: 100%;
+    overflow: hidden;
 }
 
 .img-btn .spotify,
@@ -115,14 +117,16 @@
     color: #000000;
     border: none;
     border-radius: 500px;
-    padding: 4px 8px;
-    font-size: 0.65rem;
+    padding: 4px 6px;
+    font-size: 0.55rem;
     font-weight: 700;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.02em;
     cursor: pointer;
     white-space: nowrap;
     width: 100%;
     text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .card-info {
@@ -251,10 +255,11 @@ button {
         height: 60px;
         min-width: 60px;
     }
+    .img-btn .spotify,
     .img-btn .btn,
     .img-btn button {
-        padding: 6px 12px;
-        font-size: 0.7rem;
+        padding: 6px 10px;
+        font-size: 0.65rem;
     }
     .card-info {
         align-items: flex-start;
@@ -340,9 +345,12 @@ button {
         height: auto;
         aspect-ratio: 1;
     }
+    .img-btn .spotify,
     .img-btn .btn,
     .img-btn button {
         width: 100%;
+        padding: 5px 8px;
+        font-size: 0.6rem;
     }
     .card-info {
         align-items: center;
@@ -400,6 +408,12 @@ button {
         grid-template-columns: 1fr;
         gap: 4px;
     }
+    .img-btn .spotify,
+    .img-btn .btn,
+    .img-btn button {
+        padding: 4px 6px;
+        font-size: 0.5rem;
+    }
 }
 @media(max-width:390px){
     .grid {
@@ -433,6 +447,12 @@ button {
     .card {
         padding: 4px;
     }
+    .img-btn .spotify,
+    .img-btn .btn,
+    .img-btn button {
+        padding: 3px 5px;
+        font-size: 0.5rem;
+    }
     .titulo-h2{
         font-size: 0.8rem;
     }
@@ -458,5 +478,13 @@ button {
     }
     .grid {
         grid-template-columns: 1fr;
+    }
+    .img-btn .spotify,
+    .img-btn .btn,
+    .img-btn button {
+        padding: 3px 4px;
+        font-size: 0.45rem;
+    }
+}
     }
 }
