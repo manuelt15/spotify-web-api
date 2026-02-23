@@ -32,16 +32,14 @@ export const Discover = () => {
     const handleSearch = (e) => {
         e.preventDefault()
         if (cancion.trim() === '') {
-            // alert(`Debes rellenar los campos`)
             Swal.fire({
-                title: "🤕",
-                text: "Debes rellenar el campo de busqueda",
-                icon: "error",
+                title: "Search Required",
+                text: "Please enter an artist name to search",
+                icon: "warning",
                 confirmButtonColor: "#1ED760"
             });
             return
         }
-        // console.log(cancion)
         setCancion('')
         getCanciones(cancion)
     }
