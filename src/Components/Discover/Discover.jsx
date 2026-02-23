@@ -74,12 +74,12 @@ export const Discover = () => {
                 <form className='form' onSubmit={handleSearch}>
                     <img src="/search-b.svg" alt="lupa" className="lupa" />
                     <input type="text" value={cancion} placeholder='search' className='search' onChange={e => setCancion(e.target.value)} />
-                    <input type="submit" className='submit' />
+                    <input type="submit" className='submit' value="send" />
                 </form>
             </div>
 
             <div className="wrapper-tops">
-                <h2 className="charts-h2">{canciones.length === 0 ? <div>Spotify Artists</div> : <div>{`Welcome Artists`}</div>}</h2>
+                <h2 className="charts-h2">Artist</h2>
                 <div className="wrapper-charts">
                     {canciones.length === 0 ? <div style={{
                         color: `white`,
